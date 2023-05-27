@@ -22,7 +22,7 @@ def falar(texto):
 def ouvir():
     with sr.Microphone() as source:
         print("Ouvindo...")
-        recognizer.pause_threshold = 0.5  # Pausa de 1 segundo para finalizar a fala
+        recognizer.pause_threshold = 1  # Pausa de 1 segundo para finalizar a fala
         audio = recognizer.listen(source)
 
     try:
